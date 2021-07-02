@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .form-box{
+        display: flex;
+       align-items: center;
+        flex-direction: column;
+        width: 1126px;
+        height: 540px;
+        margin: 0 auto;
+        background: #4287f5;
+    }
+
+    .form-box input{
+            margin-top: 10px;
+            width: 300px;
+            height: 30px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    button{
+        margin-top: 30px;
+        width: 120px;
+        height: 40px;
+        background : #18ed9f;
+        color: white;
+       
+        border: 0;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+
+
+</style>
+<body>
+       <%- include('navbar.ejs') %> 
+       <div class="form-box">
+
+            <h2>CADASTRO DE USUARIO</h2>
+            <form action="/cadastro-conta" method="POST">
+                    <div class="form-group"><input type="email" name="email" placeholder="insira seu email" required></div>
+                    <div class="form-group"><input type="text" name="nome" placeholder="insira seu nome" required></div>
+                    <div class="form-group"><input type="password" name="senha" placeholder="insira sua senha" required></div>
+                    <button> Enviar</button>
+            </form>
+
+       </div>
+</body>
+</html>
