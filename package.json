@@ -5,7 +5,8 @@
   "main": "src/server.js",
   "scripts": {
     "start": "nodemon .",
-    "init-db": "nodemon src/db/init.js"
+    "init-db": "nodemon src/db/init.js",
+    "send-mail" :"nodemon src/controllers/SendMail.js"
   },
   "keywords": [],
   "author": "",
