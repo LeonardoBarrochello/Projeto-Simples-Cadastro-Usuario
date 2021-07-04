@@ -12,5 +12,6 @@ route.get("/login" , (req,res) => res.render("login"))
 route.post("/cadastro-conta",CadastroController.create)
 route.post("/login-conta",LoginController.open)
 
+
 module.exports = route
 
