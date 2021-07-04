@@ -8,14 +8,14 @@ module.exports = {
                 secure: false,
                 requireTLS: true,
                 auth: {
-                    user: email,
+                    user: 'leonardobarrochello58@gmail.com',
                     pass: '246578901'
                 }
             });
             
             let mailOptions = {
-                from: email,
-                to: 'leonardobarrochello57@gmail.com',
+                from: 'leonardobarrochello58@gmail.com',
+                to: email,
                 subject: 'Test',
                 text: message
             };

@@ -8,6 +8,7 @@ const initDb = {
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             email TEXT,
             pass TEXT
+
         )`);
         await db.close()
     }

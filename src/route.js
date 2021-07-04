@@ -11,7 +11,7 @@ route.get('/logout' , (req,res)=>{req.session.destroy() ; res.redirect('/')})
 route.get("/", (req,res) =>{if(req.session.login){res.redirect('/admin')}else{res.render('login')}})
 route.get("/admin", (req,res) => {
     if(req.session.login){
-        res.render("admin",{sessao:req.session.login})
+        res.render("admin/admin",{sessao:req.session.login})
     }else{
         res.redirect('login')
     }

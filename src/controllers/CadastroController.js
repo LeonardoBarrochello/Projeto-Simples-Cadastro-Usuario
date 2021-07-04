@@ -9,7 +9,7 @@ module.exports = {
         let pass = req.body.senha;
         let verifyCreate = await db.all(`SELECT * FROM usuario WHERE email = '${email}' `)
         console.log(verifyCreate)
-        if( ! verifyCreate.length >0){
+        if( !verifyCreate.length >0){
             const message = "Olá usuario!! bem vindo ao nosso site!!"
             await db.run(`INSERT INTO usuario(email,pass)  VALUES('${email}',${pass})`)
             send.send(email,message)
