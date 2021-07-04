@@ -12,4 +12,4 @@ server.use(express.static("public"))
 server.use(express.urlencoded({extended:true}))
 server.use(route)   //informa para o express usar o arquivo route senão não funciona 
 
-server.listen(6379,()=>{console.log("RODANDO")})
+server.listen(3000,()=>{console.log("RODANDO")})

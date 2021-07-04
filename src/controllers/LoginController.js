@@ -15,7 +15,7 @@ module.exports = {
            const verifyUser =  await db.get(`SELECT * FROM usuario WHERE email = '${email}' and pass = ${pass} `)
            if(!verifyUser == ''){
                     req.session.login = verifyUser.email
-                    res.redirect("/painel/") //ver pq o session n funciona
+                    res.redirect(`/admin`) //ver pq o session n funciona
            }else{
                 res.render("parts/passincorrect")
            }
