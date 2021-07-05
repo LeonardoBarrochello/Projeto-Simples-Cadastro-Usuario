@@ -6,6 +6,7 @@ const initDb = {
 
         await db.exec(`CREATE TABLE usuario (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT,
             email TEXT,
             pass TEXT
 
