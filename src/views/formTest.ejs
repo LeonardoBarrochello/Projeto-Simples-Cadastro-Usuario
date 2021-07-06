@@ -7,9 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="/cadastro" method="POST">
+    <form action="/cadastro" method="POST" enctype="multipart/form-data">
         <input name="name" type="text" />
         <input name="site" type="url" />
+        <input name="foto" type="file" />
         <input type="submit" value="Enviar" />
     </form>
 </body>
