@@ -18,11 +18,12 @@ route.get("/admin", (req,res) => {
 })
 route.get("/cadastro" , (req,res) => res.render("cadastro"))
 route.get("/login" , (req,res) => res.render("login"))
-
 route.post("/cadastro-conta",CadastroController.create)
 route.post("/login-conta",(req,res)=> {
     LoginController.open(req,res)
 })
+
+
 
 
 module.exports = route
